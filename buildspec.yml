@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - echo "Compilando pagina..."
+      - ls -la pagina/
+
+artifacts:
+  files:
+    - pagina/pagina.html
+    - pagina/style.css
+    - pagina/script.js
+  discard-paths: no
