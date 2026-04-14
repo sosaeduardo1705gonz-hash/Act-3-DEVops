@@ -7,10 +7,10 @@ phases:
   build:
     commands:
       - echo "Compilando pagina..."
-      - ls -la
+      - ls -la src/
 
 artifacts:
   files:
-    - pagina.html
-    - style.css
-  discard-paths: no
+    - src/index.html
+    - src/style.css
+  discard-paths: yes
